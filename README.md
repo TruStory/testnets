@@ -10,12 +10,12 @@ To join a testnet, you must submit a genesis transaction that contains the trans
 
 The latest testnet is testnet-1.
 
-### Download TruChain Linux binaries into your home ~/bin directory:
+### Install TruChain:
 
 ```
-# TODO: update with real ones
-wget https://github.com/trustory/testnets/betanet-2/build/truchaincli -O ~/bin
-wget https://github.com/trustory/testnets/betanet-2/build/truchaind -O ~/bin
+git clone https://github.com/trustory/truchain
+git checkout v0.3.1
+make install
 ```
 
 ### Install dependencies
@@ -38,14 +38,14 @@ Make sure you save the mnemonic in a safe place!
 ### Create genesis transaction
 
 ```
-truchaind add-genesis-account $(truchaincli keys show [name] -a) 1000000000000tru
+truchaind add-genesis-account $(truchaincli keys show [name] -a) 10000000000utru
 
-truchaind gentx --name [name] --amount 100000000000tru --ip [node_ip]
+truchaind gentx --name [name] --amount 10000000000utru --ip [node_ip]
 ```
 
 ### Submit genesis transaction
 
-Fork this repo, and submit a PR with your gentx file saved to: `betanet-2/gentxs`.
+Fork this repo, and submit a PR with your gentx file saved to: `testnet-1/gentx`.
 
 ## Next Steps
 
