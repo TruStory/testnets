@@ -8,7 +8,7 @@ To join a testnet, you must submit a genesis transaction that contains the trans
 
 ## How to run a validator on a testnet
 
-The latest testnet is betanet-2.
+The latest testnet is testnet-1.
 
 ### Download TruChain Linux binaries into your home ~/bin directory:
 
