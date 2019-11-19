@@ -4,7 +4,7 @@
 
 TruStory testnets will test the functionality of the TruStory blockchain prior to the launch of mainnet. Validators who plan on joining the mainnet launch are strongly encouraged to participate in testnets.
 
-To join a testnet, you must submit a "genesis transaction" that creates your validator on the TruStory blockchain.
+To join a testnet, you must submit a [genesis transaction](https://github.com/TruStory/testnets#create-genesis-transaction) that creates your validator on the TruStory blockchain.
 
 ## How to run a validator on a testnet
 
