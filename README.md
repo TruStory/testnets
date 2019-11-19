@@ -4,7 +4,7 @@
 
 TruStory testnets will test the functionality of the TruStory blockchain prior to the launch of mainnet. Validators who plan on joining the mainnet launch are strongly encouraged to participate in testnets.
 
-To join a testnet, you must submit a genesis transaction that contains the transaction that creates your validator on the TruStory blockchain.
+To join a testnet, you must submit a "genesis transaction" that creates your validator on the TruStory blockchain.
 
 ## How to run a validator on a testnet
 
@@ -14,23 +14,21 @@ The latest testnet is testnet-1.
 
 ```
 git clone https://github.com/trustory/truchain
-git checkout v0.3.1
+git checkout v0.3.3
 make install
 ```
 
-### Install dependencies
+### Setup
 
+Increase the resources limits for the user. Needed for Tendermint.
 ```
 ulimit -n 4096
-
-# this will be useful for parsing genesis files
-sudo snap install jq
 ```
 
 ### Create a wallet
 
 ```
-truchaind init --chain-id=betanet-2 [moniker]
+truchaind init --chain-id=testnet-1 [moniker]
 truchaincli keys add [name]
 ```
 Make sure you save the mnemonic in a safe place!
@@ -39,7 +37,6 @@ Make sure you save the mnemonic in a safe place!
 
 ```
 truchaind add-genesis-account $(truchaincli keys show [name] -a) 10000000000utru
-
 truchaind gentx --name [name] --amount 10000000000utru --ip [node_ip]
 ```
 
