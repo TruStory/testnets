@@ -37,10 +37,13 @@ truchaind gentx --name <name> --amount 10000000000utru --ip <node_ip_address>
 ```
 
 This generates a JSON file that contains the chain transaction that creates your validator. 
+For example, check out the genesis transaction for [blockshane](https://github.com/TruStory/testnets/blob/master/testnet-1/gentx/gentx-267f9165a57da281721c3cf58adfeb9d506b7777.json). 
+
+_The JSON in this example has been formatted to be human readable. It doesn't have to be formatted, but feel free to use a tool like [jq](https://stedolan.github.io/jq/) if you'd like to format yours as well._
 
 ### Submit genesis transaction
 
-Fork this repo, and submit a PR with your gentx file saved to: `testnet-1/gentx`.
+[Fork this repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo), and [submit a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork) with your gentx file added to: `testnet-1/gentx`.
 
 ## Next Steps
 
