@@ -6,15 +6,26 @@ TruStory testnets will test the functionality of the [TruStory blockchain](https
 
 To join a testnet, you must submit a [genesis transaction](https://github.com/TruStory/testnets#create-genesis-transaction) that creates your validator on the TruStory blockchain.
 
-## How to run a validator on a testnet
+## How to run a validator on testnet
 
 The latest testnet is [testnet-1](https://github.com/TruStory/testnets/tree/master/testnet-1).
 
 ### Install TruChain:
 
+#### Download Linux binaries
+
+```sh
+wget https://github.com/TruStory/truchain/releases/download/v0.3.4-beta/truchain-0.3.4-beta.tar.gz
+tar xzvf truchain-0.3.4-beta.tar.gz
+mkdir -p ~/bin && cp truchain* ~/bin
+```
+
+#### Build from source
+
+**Requires Go 1.13+**
 ```sh
 git clone https://github.com/trustory/truchain
-cd truchain && git checkout v0.3.3
+cd truchain && git checkout v0.3.4-beta
 make install
 ```
 
