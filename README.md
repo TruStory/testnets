@@ -14,15 +14,15 @@ The latest testnet is [testnet-1](https://github.com/TruStory/testnets/tree/mast
 
 Download Linux binaries:
 ```sh
-wget https://github.com/TruStory/truchain/releases/download/v0.3.4-beta/truchain-0.3.4-beta.tar.gz
-tar xzvf truchain-0.3.4-beta.tar.gz
-mkdir -p ~/bin && cp build/truchain* ~/bin
+mkdir -p ~/bin
+wget https://github.com/TruStory/truchain/releases/download/v0.3.5-beta/truchain-0.3.5-beta.tar.gz
+tar xzvf truchain-0.3.5-beta.tar.gz -C ~/bin
 ```
 
 Alternatively, build from source:
 ```sh
 git clone https://github.com/trustory/truchain
-cd truchain && git checkout v0.3.4-beta
+cd truchain && git checkout v0.3.5-beta
 make install
 ```
 
@@ -31,10 +31,7 @@ For full instructions, see [https://github.com/TruStory/truchain](https://github
 ### Create a wallet
 
 ```sh
-# <moniker> is the name of your validator node
-truchaind init --chain-id=testnet-1 <moniker>
-
-# <name> is the name of your validator's account
+# <name> is the name of your validator's account, i.e: validator
 truchaincli keys add <name>
 ```
 Make sure you save the mnemonic in a safe place!
@@ -42,6 +39,9 @@ Make sure you save the mnemonic in a safe place!
 ### Create genesis transaction
 
 ```sh
+# <moniker> is the name of your validator node
+truchaind init --chain-id=testnet-1 <moniker> $(truchaincli keys show <name> -a)
+
 # <name> is the name of validator's account (from above)
 truchaind add-genesis-account $(truchaincli keys show <name> -a) 10000000000utru
 
