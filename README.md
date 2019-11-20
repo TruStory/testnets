@@ -8,37 +8,35 @@ To join a testnet, you must submit a [genesis transaction](https://github.com/Tr
 
 ## How to run a validator on a testnet
 
-The latest testnet is testnet-1.
+The latest testnet is [testnet-1](https://github.com/TruStory/testnets/tree/master/testnet-1).
 
 ### Install TruChain:
 
-```
+```sh
 git clone https://github.com/trustory/truchain
-git checkout v0.3.3
+cd truchain && git checkout v0.3.3
 make install
-```
-
-### Setup
-
-Increase the resources limits for the user. Needed for Tendermint.
-```
-ulimit -n 4096
 ```
 
 ### Create a wallet
 
-```
-truchaind init --chain-id=testnet-1 [moniker]
-truchaincli keys add [name]
+```sh
+# <moniker> is the name of your validator node
+truchaind init --chain-id=testnet-1 <moniker>
+
+# <name> is the name of your validator's account
+truchaincli keys add <name>
 ```
 Make sure you save the mnemonic in a safe place!
 
 ### Create genesis transaction
 
+```sh
+truchaind add-genesis-account $(truchaincli keys show <name> -a) 10000000000utru
+truchaind gentx --name <name> --amount 10000000000utru --ip <node_ip_address>
 ```
-truchaind add-genesis-account $(truchaincli keys show [name] -a) 10000000000utru
-truchaind gentx --name [name] --amount 10000000000utru --ip [node_ip]
-```
+
+This generates a JSON file that contains the chain transaction that creates your validator. 
 
 ### Submit genesis transaction
 
