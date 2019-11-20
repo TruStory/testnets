@@ -10,7 +10,7 @@ To join a testnet, you must submit a [genesis transaction](https://github.com/Tr
 
 The latest testnet is [testnet-1](https://github.com/TruStory/testnets/tree/master/testnet-1).
 
-### Install TruChain:
+### Install TruChain
 
 Download Linux binaries:
 ```sh
