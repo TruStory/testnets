@@ -12,24 +12,21 @@ The latest testnet is [testnet-1](https://github.com/TruStory/testnets/tree/mast
 
 ### Install TruChain:
 
-#### Download Linux binaries
-
+Download Linux binaries:
 ```sh
 wget https://github.com/TruStory/truchain/releases/download/v0.3.4-beta/truchain-0.3.4-beta.tar.gz
 tar xzvf truchain-0.3.4-beta.tar.gz
-mkdir -p ~/bin && cp truchain* ~/bin
+mkdir -p ~/bin && cp build/truchain* ~/bin
 ```
 
-#### Build from source
-
-**Requires Go 1.13+**
+Alternatively, build from source:
 ```sh
 git clone https://github.com/trustory/truchain
 cd truchain && git checkout v0.3.4-beta
 make install
 ```
 
-For full installation instructions, see [https://github.com/TruStory/truchain](https://github.com/TruStory/truchain).
+For full instructions, see [https://github.com/TruStory/truchain](https://github.com/TruStory/truchain).
 
 ### Create a wallet
 
