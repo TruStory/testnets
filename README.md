@@ -32,7 +32,10 @@ Make sure you save the mnemonic in a safe place!
 ### Create genesis transaction
 
 ```sh
+# <name> is the name of validator's account (from above)
 truchaind add-genesis-account $(truchaincli keys show <name> -a) 10000000000utru
+
+# <node_ip_address> is the public IP address of your node
 truchaind gentx --name <name> --amount 10000000000utru --ip <node_ip_address>
 ```
 
