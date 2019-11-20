@@ -1,4 +1,4 @@
-# TruStory Testnets
+![logo](./logo.jpg)
 
 ## Overview
 
