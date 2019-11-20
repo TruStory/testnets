@@ -46,7 +46,7 @@ _The JSON in this example has been formatted to be human readable. It doesn't ha
 
 ### Submit genesis transaction
 
-[Fork this repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo), and [submit a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork) with your gentx file added to: `testnet-1/gentx`.
+[Fork this repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo), and [submit a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork) with your gentx file added to: [testnet-1/gentx](https://github.com/TruStory/testnets/tree/master/testnet-1/gentx).
 
 ## Next Steps
 
