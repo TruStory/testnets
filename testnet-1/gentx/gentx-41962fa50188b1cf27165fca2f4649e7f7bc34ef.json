@@ -1,0 +1,46 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "http://noderunners.biz",
+            "identity": "",
+            "website": "",
+            "security_contact": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.200000000000000000",
+            "max_change_rate": "0.010000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "cosmos1u4eaet92wlvpvfcq62r79vf5mpng7jmzw270u7",
+          "validator_address": "cosmosvaloper1u4eaet92wlvpvfcq62r79vf5mpng7jmzt726sd",
+          "pubkey": "cosmosvalconspub1zcjduepqg94ylr9yzzxuhu5gujdt2gm6krajclrkqyyr0w5gault45chfyhsasvyvw",
+          "value": {
+            "denom": "utru",
+            "amount": "10000000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "AslQv0oh5hh/G0htBU5ch+nL0K0TZmvBRjbuB0+ipnVa"
+        },
+        "signature": "TIQFGPFoh4uDz7LUil8aipFRSOIVFvTRJ8s95Rxyi4Jtjw8UdIqEXi5nK/3xDaxMYh0otgB5gZ6N5S+bh7AbwQ=="
+      }
+    ],
+    "memo": "41962fa50188b1cf27165fca2f4649e7f7bc34ef@80.211.53.220:26656"
+  }
+}
