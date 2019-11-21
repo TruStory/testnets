@@ -1,0 +1,42 @@
+{
+	"type": "cosmos-sdk/StdTx",
+	"value": {
+		"msg": [{
+			"type": "cosmos-sdk/MsgCreateValidator",
+			"value": {
+				"description": {
+					"moniker": "witval",
+					"identity": "",
+					"website": "",
+					"security_contact": "",
+					"details": ""
+				},
+				"commission": {
+					"rate": "0.100000000000000000",
+					"max_rate": "0.200000000000000000",
+					"max_change_rate": "0.010000000000000000"
+				},
+				"min_self_delegation": "1",
+				"delegator_address": "cosmos1nle426vz4xs8gcxcp730yhk32g2vtmqyqje9vx",
+				"validator_address": "cosmosvaloper1nle426vz4xs8gcxcp730yhk32g2vtmqy9xdsq4",
+				"pubkey": "cosmosvalconspub1zcjduepq4jkgwceyytr5ezdwvtv8j8c4m644ws73wlnahq99z5x8yen6qv3qud6gaw",
+				"value": {
+					"denom": "utru",
+					"amount": "10000000000"
+				}
+			}
+		}],
+		"fee": {
+			"amount": [],
+			"gas": "200000"
+		},
+		"signatures": [{
+			"pub_key": {
+				"type": "tendermint/PubKeySecp256k1",
+				"value": "A6Q/kn2lB311SLR6Tvd0N57Bw+BeBmW5qRbILoaIOrUI"
+			},
+			"signature": "5+kArLQECTLaMGUaMUfbLglEWmBZo1eJmzfUIbUfP9MbRqcJkYH7yIuVWEwdmOMobbyXOe/IGJ2uzWCBa/S5qQ=="
+		}],
+		"memo": "9fee43592c918165cc8e0968df5dffd91ff9fa4e@146.71.79.133:26656:26656"
+	}
+}
