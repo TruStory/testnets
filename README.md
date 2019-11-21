@@ -28,6 +28,8 @@ cd truchain && git checkout v0.3.5-beta
 make install
 ```
 
+Please build from source for non-Linux systems for now.
+
 For full instructions, see [https://github.com/TruStory/truchain](https://github.com/TruStory/truchain).
 
 ### Create a wallet
@@ -58,7 +60,31 @@ _The JSON in this example has been formatted to be human readable. It doesn't ha
 
 ### Submit genesis transaction
 
-[Submit a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork) with your gentx file added to the [testnet-1/gentx](https://github.com/TruStory/testnets/tree/master/testnet-1/gentx) directory.
+Submit a pull request with your gentx file added to the [testnet-1/gentx](https://github.com/TruStory/testnets/tree/master/testnet-1/gentx) directory.
+
+Click "Fork" on top-right corner of page. Navigate to your fork, then:
+
+```sh
+# create a local clone
+git clone https://github.com/<your-username>/testnets
+
+# configure remote repo for your fork
+git remote add upstream https://github.com/TruStory/testnets
+
+# create a local branch
+git checkout --branch <your-branch>
+
+# copy over gentx file
+cp ~/.truchaind/config/gentx/*.json testnet-1/gentx
+
+# add changes to git
+git add . && git commit -m "Added gentx for <your-validator-moniker>"
+
+# push your branch
+git push origin
+```
+
+[Submit a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork) to get your genesis transaction added.
 
 ## Next Steps
 
