@@ -1,0 +1,46 @@
+{
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "stella",
+            "identity": "KP",
+            "website": "https://stella.zone",
+            "security_contact": "kp@stella.zone",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.200000000000000000",
+            "max_change_rate": "0.010000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "cosmos1exx8sgxsad3h6we4mzdu60aqdvvu6r885mvn6s",
+          "validator_address": "cosmosvaloper1exx8sgxsad3h6we4mzdu60aqdvvu6r8830cxkr",
+          "pubkey": "cosmosvalconspub1zcjduepqac0v84js9fmsl5peglyfqhl2vz7ukgk6zummq4v25szlcwnqcucsjz8tyz",
+          "value": {
+            "denom": "utru",
+            "amount": "10000000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "A/KctNfVjed80Bk/bvpk5sGxIWNeZplAwY/XdM6czqRz"
+        },
+        "signature": "A3DF+8ReDTPF1bPKsxb7kJ4PSFEf9aKuSpMHTA8j8sAw0TxUKKg7Aht16Y61GjZ1+Zt3I/4BxvXcKDW809WHHQ=="
+      }
+    ],
+    "memo": "c09529a550ca758de157262cb1d5fd0777f8a3ee@52.90.89.155:26656"
+  }
+}
