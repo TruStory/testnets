@@ -69,6 +69,7 @@ Click "Fork" on top-right corner of page. Navigate to your fork, then:
 git clone https://github.com/<your-username>/testnets
 
 # configure remote repo for your fork
+cd testnets
 git remote add upstream https://github.com/TruStory/testnets
 
 # create a local branch
