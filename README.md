@@ -1,6 +1,10 @@
 ![logo](./logo.jpg)
 
-# ⚠️ Testnet-1 Update (work in progress...)
+# ⚠️ Testnet-1 Update
+
+Testnet-1 genesis start time: Nov 26th 9AM PST (1700 GMT)
+
+Genesis transaction submission deadline: Nov 22nd at 5pm PST (0100 GMT)
 
 Please update your binaries to the latest release [v0.4.0-beta](https://github.com/TruStory/truchain/releases/tag/v0.4.0-beta):
 ```sh
@@ -8,23 +12,6 @@ mkdir -p ~/bin
 wget https://github.com/TruStory/truchain/releases/download/v0.4.0-beta/truchain-0.4.0-beta.tar.gz
 tar xzvf truchain-0.4.0-beta.tar.gz -C ~/bin
 ```
-
-Download the genesis file to your chain config directory:
-```sh
-wget -P .truchaind/config https://raw.githubusercontent.com/TruStory/testnets/master/testnet-1/genesis.json
-```
-
-Check the checksum of your genesis file:
-```
-sha256sum .truchaind/config/genesis.json
-```
-It should be `7bc5a6f28883743b1b0b350d23538f4b8aaf7660fc183c393f1bbcd626e3fbe6`.
-
-Start your chain with:
-```
-truchaind start --p2p.persistent_peers "267f9165a57da281721c3cf58adfeb9d506b7777@13.52.13.214:26656"
-```
-Better yet, start it [as a service](https://github.com/TruStory/testnets/blob/master/linux.md#make-a-system-service-optional).
  
 ## Overview
 
