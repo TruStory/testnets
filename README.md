@@ -1,5 +1,15 @@
 ![logo](./logo.jpg)
 
+# ⚠️ Testnet-1 Update
+
+Please update your binaries to the latest release [v0.4.0-beta](https://github.com/TruStory/truchain/releases/tag/v0.4.0-beta):
+```sh
+mkdir -p ~/bin
+wget https://github.com/TruStory/truchain/releases/download/v0.4.0-beta/truchain-0.4.0-beta.tar.gz
+tar xzvf truchain-0.4.0-beta.tar.gz -C ~/bin
+```
+
+
 ## Overview
 
 TruStory testnets will test the functionality of the [TruStory blockchain](https://github.com/TruStory/truchain) prior to the launch of mainnet. Validators who plan on joining the mainnet launch are strongly encouraged to participate in testnets.
@@ -17,14 +27,14 @@ The latest testnet is [testnet-1](https://github.com/TruStory/testnets/tree/mast
 Download Linux binaries:
 ```sh
 mkdir -p ~/bin
-wget https://github.com/TruStory/truchain/releases/download/v0.3.5-beta/truchain-0.3.5-beta.tar.gz
-tar xzvf truchain-0.3.5-beta.tar.gz -C ~/bin
+wget https://github.com/TruStory/truchain/releases/download/v0.4.0-beta/truchain-0.4.0-beta.tar.gz
+tar xzvf truchain-0.4.0-beta.tar.gz -C ~/bin
 ```
 
 Alternatively, build from source:
 ```sh
 git clone https://github.com/trustory/truchain
-cd truchain && git checkout v0.3.5-beta
+cd truchain && git checkout v0.4.0-beta
 make install
 ```
 
