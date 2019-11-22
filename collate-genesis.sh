@@ -1,7 +1,7 @@
 #!/bin/bash
 
 NETWORK=testnet-1
-CONFIG=~/.truchaind
+CONFIG=~/.truchaind/config
 
 rm -rf $CONFIG/gentx && mkdir $CONFIG/gentx
 
