@@ -9,6 +9,10 @@ wget https://github.com/TruStory/truchain/releases/download/v0.4.0-beta/truchain
 tar xzvf truchain-0.4.0-beta.tar.gz -C ~/bin
 ```
 
+Download the genesis file to your chain config directory:
+```sh
+
+```
 
 ## Overview
 
