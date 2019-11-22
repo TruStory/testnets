@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2019-11-21T06:21:05.354645Z",
+  "genesis_time": "2019-11-22T09:38:52.978298893Z",
   "chain_id": "testnet-1",
   "consensus_params": {
     "block": {
@@ -18,303 +18,6 @@
   },
   "app_hash": "",
   "app_state": {
-    "crisis": {
-      "constant_fee": {
-        "denom": "utru",
-        "amount": "1000"
-      }
-    },
-    "supply": {
-      "supply": []
-    },
-    "auth": {
-      "params": {
-        "max_memo_characters": "256",
-        "tx_sig_limit": "7",
-        "tx_size_cost_per_byte": "10",
-        "sig_verify_cost_ed25519": "590",
-        "sig_verify_cost_secp256k1": "1000"
-      },
-      "accounts": [
-        {
-          "type": "cosmos-sdk/Account",
-          "value": {
-            "address": "cosmos13khv88xxuaevj2rte07y69xwcfmdkdduz9fwrh",
-            "coins": [
-              {
-                "denom": "utru",
-                "amount": "10000000000"
-              }
-            ],
-            "public_key": null,
-            "account_number": "0",
-            "sequence": "0"
-          }
-        },
-        {
-          "type": "cosmos-sdk/Account",
-          "value": {
-            "address": "cosmos122lxw5550pdwrdc3ddd4mgqychtgucyr5wlj38",
-            "coins": [
-              {
-                "denom": "utru",
-                "amount": "10000000000"
-              }
-            ],
-            "public_key": null,
-            "account_number": "0",
-            "sequence": "0"
-          }
-        },
-        {
-          "type": "cosmos-sdk/Account",
-          "value": {
-            "address": "cosmos1pppc66kd55fsyr0fqjmr9ynnt45e5ll7lqvexj",
-            "coins": [
-              {
-                "denom": "utru",
-                "amount": "10000000000"
-              }
-            ],
-            "public_key": null,
-            "account_number": "0",
-            "sequence": "0"
-          }
-        },
-        {
-          "type": "cosmos-sdk/Account",
-          "value": {
-            "address": "cosmos1668m96unc8e77ty2dzhhuaqj9qp04582mvmuyj",
-            "coins": [
-              {
-                "denom": "utru",
-                "amount": "10000000000"
-              }
-            ],
-            "public_key": null,
-            "account_number": "0",
-            "sequence": "0"
-          }
-        },
-        {
-          "type": "cosmos-sdk/Account",
-          "value": {
-            "address": "cosmos1u4eaet92wlvpvfcq62r79vf5mpng7jmzw270u7",
-            "coins": [
-              {
-                "denom": "utru",
-                "amount": "10000000000"
-              }
-            ],
-            "public_key": null,
-            "account_number": "0",
-            "sequence": "0"
-          }
-        },
-        {
-          "type": "cosmos-sdk/Account",
-          "value": {
-            "address": "cosmos1lnl3ck20rl9vzk0eerfluyhjyl0jukr4hjxmlh",
-            "coins": [
-              {
-                "denom": "utru",
-                "amount": "10000000000"
-              }
-            ],
-            "public_key": null,
-            "account_number": "0",
-            "sequence": "0"
-          }
-        },
-        {
-          "type": "cosmos-sdk/Account",
-          "value": {
-            "address": "cosmos1afactnpzk98s2uuxzqae6mr7zgudels4kxw2qk",
-            "coins": [
-              {
-                "denom": "utru",
-                "amount": "10000000000"
-              }
-            ],
-            "public_key": null,
-            "account_number": "0",
-            "sequence": "0"
-          }
-        },
-        {
-          "type": "cosmos-sdk/Account",
-          "value": {
-            "address": "cosmos18d3l2agflzchlz4pm0my63dvh5f4sddugcevzl",
-            "coins": [
-              {
-                "denom": "utru",
-                "amount": "10000000000"
-              }
-            ],
-            "public_key": null,
-            "account_number": "0",
-            "sequence": "0"
-          }
-        },
-        {
-          "type": "cosmos-sdk/Account",
-          "value": {
-            "address": "cosmos1rh2a8r0u8mllh08zddeyz5qx2x4tu38za47msc",
-            "coins": [
-              {
-                "denom": "utru",
-                "amount": "10000000000"
-              }
-            ],
-            "public_key": null,
-            "account_number": "0",
-            "sequence": "0"
-          }
-        },
-        {
-          "type": "cosmos-sdk/Account",
-          "value": {
-            "address": "cosmos1qyv8mkw30mahm6ym26ug07p67mxxp330x3w298",
-            "coins": [
-              {
-                "denom": "utru",
-                "amount": "10000000000"
-              }
-            ],
-            "public_key": null,
-            "account_number": "0",
-            "sequence": "0"
-          }
-        },
-        {
-          "type": "cosmos-sdk/Account",
-          "value": {
-            "address": "cosmos1exx8sgxsad3h6we4mzdu60aqdvvu6r885mvn6s",
-            "coins": [
-              {
-                "denom": "utru",
-                "amount": "10000000000"
-              }
-            ],
-            "public_key": null,
-            "account_number": "0",
-            "sequence": "0"
-          }
-        },
-        {
-          "type": "cosmos-sdk/Account",
-          "value": {
-            "address": "cosmos1nle426vz4xs8gcxcp730yhk32g2vtmqyqje9vx",
-            "coins": [
-              {
-                "denom": "utru",
-                "amount": "10000000000"
-              }
-            ],
-            "public_key": null,
-            "account_number": "0",
-            "sequence": "0"
-          }
-        }
-      ]
-    },
-    "mint": {
-      "minter": {
-        "inflation": "0.130000000000000000",
-        "annual_provisions": "0.000000000000000000"
-      },
-      "params": {
-        "mint_denom": "utru",
-        "inflation_rate_change": "0.130000000000000000",
-        "inflation_max": "0.200000000000000000",
-        "inflation_min": "0.070000000000000000",
-        "goal_bonded": "0.670000000000000000",
-        "blocks_per_year": "6311520"
-      }
-    },
-    "params": null,
-    "trudistribution": {
-      "params": {
-        "user_growth_allocation": "0.250000000000000000",
-        "user_reward_allocation": "0.250000000000000000",
-        "stakeholder_allocation": "0.250000000000000000"
-      }
-    },
-    "community": {
-      "communities": [
-        {
-          "id": "crypto",
-          "name": "Cryptocurrency",
-          "description": "description string",
-          "created_time": "2019-11-21T06:21:05.354477Z"
-        },
-        {
-          "id": "meme",
-          "name": "Memes",
-          "description": "description string",
-          "created_time": "2019-11-21T06:21:05.354477Z"
-        }
-      ],
-      "params": {
-        "min_id_length": "3",
-        "max_id_length": "15",
-        "min_name_length": "5",
-        "max_name_length": "25",
-        "max_description_length": "140",
-        "community_admins": [
-          "cosmos13khv88xxuaevj2rte07y69xwcfmdkdduz9fwrh"
-        ]
-      }
-    },
-    "trustaking": {
-      "arguments": null,
-      "params": {
-        "period": "604800000000000",
-        "argument_creation_stake": {
-          "denom": "utru",
-          "amount": "50000000"
-        },
-        "argument_body_max_length": "1250",
-        "argument_body_min_length": "25",
-        "argument_summary_max_length": "140",
-        "argument_summary_min_length": "25",
-        "upvote_stake": {
-          "denom": "utru",
-          "amount": "10000000"
-        },
-        "creator_share": "0.500000000000000000",
-        "interest_rate": "1.050000000000000000",
-        "staking_admins": [
-          "cosmos13khv88xxuaevj2rte07y69xwcfmdkdduz9fwrh"
-        ],
-        "stake_limit_percent": "0.667000000000000000",
-        "stake_limit_days": "604800000000000",
-        "unjail_upvotes": "1",
-        "max_arguments_per_claim": "5"
-      },
-      "stakes": null,
-      "users_earnings": null
-    },
-    "claim": {
-      "claims": null,
-      "params": {
-        "min_claim_length": "25",
-        "max_claim_length": "140",
-        "claim_admins": [
-          "cosmos13khv88xxuaevj2rte07y69xwcfmdkdduz9fwrh"
-        ]
-      }
-    },
-    "account": {
-      "app_accounts": null,
-      "params": {
-        "registrar": "cosmos13khv88xxuaevj2rte07y69xwcfmdkdduz9fwrh",
-        "max_slash_count": "3",
-        "jail_duration": "604800000000000",
-        "user_growth_allocation": "0.200000000000000000",
-        "stakeholder_allocation": "0.200000000000000000"
-      }
-    },
     "genutil": {
       "gentxs": [
         {
@@ -337,9 +40,9 @@
                     "max_change_rate": "0.010000000000000000"
                   },
                   "min_self_delegation": "1",
-                  "delegator_address": "cosmos122lxw5550pdwrdc3ddd4mgqychtgucyr5wlj38",
-                  "validator_address": "cosmosvaloper122lxw5550pdwrdc3ddd4mgqychtgucyr36t8a5",
-                  "pubkey": "cosmosvalconspub1zcjduepqhzxkxfrr2x7535j5dx5nlxfz4s4m3ketxldjzg0lrcx0amjvdg8qekqca0",
+                  "delegator_address": "tru122lxw5550pdwrdc3ddd4mgqychtgucyrjav4t9",
+                  "validator_address": "truvaloper122lxw5550pdwrdc3ddd4mgqychtgucyrnvak3k",
+                  "pubkey": "truvalconspub1zcjduepqhzxkxfrr2x7535j5dx5nlxfz4s4m3ketxldjzg0lrcx0amjvdg8qrmz5xq",
                   "value": {
                     "denom": "utru",
                     "amount": "10000000000"
@@ -383,9 +86,9 @@
                     "max_change_rate": "0.010000000000000000"
                   },
                   "min_self_delegation": "1",
-                  "delegator_address": "cosmos1pppc66kd55fsyr0fqjmr9ynnt45e5ll7lqvexj",
-                  "validator_address": "cosmosvaloper1pppc66kd55fsyr0fqjmr9ynnt45e5ll765cv2p",
-                  "pubkey": "cosmosvalconspub1zcjduepqrs4ghvhkcnj5l7g5elc0tu7fn3pwqu3390dl60pl5pcgw5t9mdvsdm30cd",
+                  "delegator_address": "tru1pppc66kd55fsyr0fqjmr9ynnt45e5ll7enl7us",
+                  "validator_address": "truvaloper1pppc66kd55fsyr0fqjmr9ynnt45e5ll7czwaxr",
+                  "pubkey": "truvalconspub1zcjduepqrs4ghvhkcnj5l7g5elc0tu7fn3pwqu3390dl60pl5pcgw5t9mdvshknrrz",
                   "value": {
                     "denom": "utru",
                     "amount": "10000000000"
@@ -429,9 +132,9 @@
                     "max_change_rate": "0.010000000000000000"
                   },
                   "min_self_delegation": "1",
-                  "delegator_address": "cosmos1668m96unc8e77ty2dzhhuaqj9qp04582mvmuyj",
-                  "validator_address": "cosmosvaloper1668m96unc8e77ty2dzhhuaqj9qp045827c0fgp",
-                  "pubkey": "cosmosvalconspub1zcjduepq9xq65rvmju749j5hufztgyzwy6klvrsfz29t4njj5sg05lwt06uqzhh7td",
+                  "delegator_address": "tru1668m96unc8e77ty2dzhhuaqj9qp04582algm7s",
+                  "validator_address": "truvaloper1668m96unc8e77ty2dzhhuaqj9qp04582uwecyr",
+                  "pubkey": "truvalconspub1zcjduepq9xq65rvmju749j5hufztgyzwy6klvrsfz29t4njj5sg05lwt06uqc64jsz",
                   "value": {
                     "denom": "utru",
                     "amount": "10000000000"
@@ -475,9 +178,9 @@
                     "max_change_rate": "0.010000000000000000"
                   },
                   "min_self_delegation": "1",
-                  "delegator_address": "cosmos1u4eaet92wlvpvfcq62r79vf5mpng7jmzw270u7",
-                  "validator_address": "cosmosvaloper1u4eaet92wlvpvfcq62r79vf5mpng7jmzt726sd",
-                  "pubkey": "cosmosvalconspub1zcjduepqg94ylr9yzzxuhu5gujdt2gm6krajclrkqyyr0w5gault45chfyhsasvyvw",
+                  "delegator_address": "tru1u4eaet92wlvpvfcq62r79vf5mpng7jmzgedgxu",
+                  "validator_address": "truvaloper1u4eaet92wlvpvfcq62r79vf5mpng7jmzfgutu0",
+                  "pubkey": "truvalconspub1zcjduepqg94ylr9yzzxuhu5gujdt2gm6krajclrkqyyr0w5gault45chfyhs8awghp",
                   "value": {
                     "denom": "utru",
                     "amount": "10000000000"
@@ -521,9 +224,9 @@
                     "max_change_rate": "0.010000000000000000"
                   },
                   "min_self_delegation": "1",
-                  "delegator_address": "cosmos1lnl3ck20rl9vzk0eerfluyhjyl0jukr4hjxmlh",
-                  "validator_address": "cosmosvaloper1lnl3ck20rl9vzk0eerfluyhjyl0jukr4jxjwny",
-                  "pubkey": "cosmosvalconspub1zcjduepq7jvatact8ygrccvd8q0kslmlyzpsftrrllcsvmgd32pyrrgk6aps2g3j2c",
+                  "delegator_address": "tru1lnl3ck20rl9vzk0eerfluyhjyl0jukr43p4u94",
+                  "validator_address": "truvaloper1lnl3ck20rl9vzk0eerfluyhjyl0jukr4ssyllx",
+                  "pubkey": "truvalconspub1zcjduepq7jvatact8ygrccvd8q0kslmlyzpsftrrllcsvmgd32pyrrgk6apss9n73h",
                   "value": {
                     "denom": "utru",
                     "amount": "10000000000"
@@ -567,9 +270,9 @@
                     "max_change_rate": "0.010000000000000000"
                   },
                   "min_self_delegation": "1",
-                  "delegator_address": "cosmos1afactnpzk98s2uuxzqae6mr7zgudels4kxw2qk",
-                  "validator_address": "cosmosvaloper1afactnpzk98s2uuxzqae6mr7zgudels4nj6lv9",
-                  "pubkey": "cosmosvalconspub1zcjduepqg56g77upj8gdw9ljjzfja9w6f0rm4qwz9gf2n9hax9s0nn58a37s23ukz0",
+                  "delegator_address": "tru1afactnpzk98s2uuxzqae6mr7zgudels4s4ad65",
+                  "validator_address": "truvaloper1afactnpzk98s2uuxzqae6mr7zgudels43yvwq8",
+                  "pubkey": "truvalconspub1zcjduepqg56g77upj8gdw9ljjzfja9w6f0rm4qwz9gf2n9hax9s0nn58a37ssu76eq",
                   "value": {
                     "denom": "utru",
                     "amount": "10000000000"
@@ -613,9 +316,9 @@
                     "max_change_rate": "0.010000000000000000"
                   },
                   "min_self_delegation": "1",
-                  "delegator_address": "cosmos18d3l2agflzchlz4pm0my63dvh5f4sddugcevzl",
-                  "validator_address": "cosmosvaloper18d3l2agflzchlz4pm0my63dvh5f4sddudvdewv",
-                  "pubkey": "cosmosvalconspub1zcjduepquaqkp6vaty3krq6x7mq6pkuk09v4ak6v5jjfd33qdnmtxc6rgdgqxa9df7",
+                  "delegator_address": "tru18d3l2agflzchlz4pm0my63dvh5f4sdduwt2tca",
+                  "validator_address": "truvaloper18d3l2agflzchlz4pm0my63dvh5f4sddu06mgzw",
+                  "pubkey": "truvalconspub1zcjduepquaqkp6vaty3krq6x7mq6pkuk09v4ak6v5jjfd33qdnmtxc6rgdgqus8pj3",
                   "value": {
                     "denom": "utru",
                     "amount": "10000000000"
@@ -659,9 +362,9 @@
                     "max_change_rate": "0.010000000000000000"
                   },
                   "min_self_delegation": "1",
-                  "delegator_address": "cosmos1rh2a8r0u8mllh08zddeyz5qx2x4tu38za47msc",
-                  "validator_address": "cosmosvaloper1rh2a8r0u8mllh08zddeyz5qx2x4tu38zcp2wut",
-                  "pubkey": "cosmosvalconspub1zcjduepqwy9lzhyklljhl042zz7j6xvdswm32h7hy22tnlrf7pjatnsd4pvqlqw0vt",
+                  "delegator_address": "tru1rh2a8r0u8mllh08zddeyz5qx2x4tu38zmxdu26",
+                  "validator_address": "truvaloper1rh2a8r0u8mllh08zddeyz5qx2x4tu38z6hulsf",
+                  "pubkey": "truvalconspub1zcjduepqwy9lzhyklljhl042zz7j6xvdswm32h7hy22tnlrf7pjatnsd4pvq9dvrhy",
                   "value": {
                     "denom": "utru",
                     "amount": "10000000000"
@@ -705,9 +408,9 @@
                     "max_change_rate": "0.010000000000000000"
                   },
                   "min_self_delegation": "1",
-                  "delegator_address": "cosmos1qyv8mkw30mahm6ym26ug07p67mxxp330x3w298",
-                  "validator_address": "cosmosvaloper1qyv8mkw30mahm6ym26ug07p67mxxp330r96lf5",
-                  "pubkey": "cosmosvalconspub1zcjduepqjhsa9gqgps0a58h4dkvkhp2cdm5ke0jtqre7ftl38f34ezuexa5q6ujusu",
+                  "delegator_address": "tru1qyv8mkw30mahm6ym26ug07p67mxxp330qzadl9",
+                  "validator_address": "truvaloper1qyv8mkw30mahm6ym26ug07p67mxxp330pnvw9k",
+                  "pubkey": "truvalconspub1zcjduepqjhsa9gqgps0a58h4dkvkhp2cdm5ke0jtqre7ftl38f34ezuexa5qq3sstn",
                   "value": {
                     "denom": "utru",
                     "amount": "10000000000"
@@ -751,9 +454,9 @@
                     "max_change_rate": "0.010000000000000000"
                   },
                   "min_self_delegation": "1",
-                  "delegator_address": "cosmos1exx8sgxsad3h6we4mzdu60aqdvvu6r885mvn6s",
-                  "validator_address": "cosmosvaloper1exx8sgxsad3h6we4mzdu60aqdvvu6r8830cxkr",
-                  "pubkey": "cosmosvalconspub1zcjduepqac0v84js9fmsl5peglyfqhl2vz7ukgk6zummq4v25szlcwnqcucsjz8tyz",
+                  "delegator_address": "tru1exx8sgxsad3h6we4mzdu60aqdvvu6r88jgl5qj",
+                  "validator_address": "truvaloper1exx8sgxsad3h6we4mzdu60aqdvvu6r88newh6p",
+                  "pubkey": "truvalconspub1zcjduepqac0v84js9fmsl5peglyfqhl2vz7ukgk6zummq4v25szlcwnqcucsg098ld",
                   "value": {
                     "denom": "utru",
                     "amount": "10000000000"
@@ -797,9 +500,9 @@
                     "max_change_rate": "0.010000000000000000"
                   },
                   "min_self_delegation": "1",
-                  "delegator_address": "cosmos1nle426vz4xs8gcxcp730yhk32g2vtmqyqje9vx",
-                  "validator_address": "cosmosvaloper1nle426vz4xs8gcxcp730yhk32g2vtmqy9xdsq4",
-                  "pubkey": "cosmosvalconspub1zcjduepq4jkgwceyytr5ezdwvtv8j8c4m644ws73wlnahq99z5x8yen6qv3qud6gaw",
+                  "delegator_address": "tru1nle426vz4xs8gcxcp730yhk32g2vtmqyxp2zky",
+                  "validator_address": "truvaloper1nle426vz4xs8gcxcp730yhk32g2vtmqy8smpvh",
+                  "pubkey": "truvalconspub1zcjduepq4jkgwceyytr5ezdwvtv8j8c4m644ws73wlnahq99z5x8yen6qv3qxqcyxp",
                   "value": {
                     "denom": "utru",
                     "amount": "10000000000"
@@ -825,8 +528,62 @@
         }
       ]
     },
-    "bank": {
-      "send_enabled": true
+    "trubank": {
+      "transactions": null,
+      "params": {
+        "reward_broker_address": "tru1pppc66kd55fsyr0fqjmr9ynnt45e5ll7enl7us"
+      }
+    },
+    "trudistribution": {
+      "params": {
+        "user_growth_allocation": "0.250000000000000000",
+        "user_reward_allocation": "0.250000000000000000",
+        "stakeholder_allocation": "0.250000000000000000"
+      }
+    },
+    "staking": {
+      "params": {
+        "unbonding_time": "1814400000000000",
+        "max_validators": 100,
+        "max_entries": 7,
+        "bond_denom": "utru"
+      },
+      "last_total_power": "0",
+      "last_validator_powers": null,
+      "validators": null,
+      "delegations": null,
+      "unbonding_delegations": null,
+      "redelegations": null,
+      "exported": false
+    },
+    "supply": {
+      "supply": []
+    },
+    "community": {
+      "communities": [
+        {
+          "id": "crypto",
+          "name": "Cryptocurrency",
+          "description": "description string",
+          "created_time": "2019-11-22T09:38:52.977886073Z"
+        },
+        {
+          "id": "meme",
+          "name": "Memes",
+          "description": "description string",
+          "created_time": "2019-11-22T09:38:52.977887876Z"
+        }
+      ],
+      "params": {
+        "min_id_length": "3",
+        "max_id_length": "15",
+        "min_name_length": "5",
+        "max_name_length": "25",
+        "max_description_length": "140",
+        "community_admins": [
+          "tru1pppc66kd55fsyr0fqjmr9ynnt45e5ll7enl7us"
+        ]
+      }
     },
     "slashing": {
       "params": {
@@ -840,10 +597,18 @@
       "signing_infos": {},
       "missed_blocks": {}
     },
-    "trubank": {
-      "transactions": null,
+    "mint": {
+      "minter": {
+        "inflation": "0.130000000000000000",
+        "annual_provisions": "0.000000000000000000"
+      },
       "params": {
-        "reward_broker_address": "cosmos13khv88xxuaevj2rte07y69xwcfmdkdduz9fwrh"
+        "mint_denom": "utru",
+        "inflation_rate_change": "0.130000000000000000",
+        "inflation_max": "0.200000000000000000",
+        "inflation_min": "0.070000000000000000",
+        "goal_bonded": "0.670000000000000000",
+        "blocks_per_year": "6311520"
       }
     },
     "gov": {
@@ -869,20 +634,210 @@
         "veto": "0.334000000000000000"
       }
     },
-    "staking": {
+    "trustaking": {
+      "arguments": null,
       "params": {
-        "unbonding_time": "1814400000000000",
-        "max_validators": 100,
-        "max_entries": 7,
-        "bond_denom": "utru"
+        "period": "604800000000000",
+        "argument_creation_stake": {
+          "denom": "utru",
+          "amount": "50000000"
+        },
+        "argument_body_max_length": "1250",
+        "argument_body_min_length": "25",
+        "argument_summary_max_length": "140",
+        "argument_summary_min_length": "25",
+        "upvote_stake": {
+          "denom": "utru",
+          "amount": "10000000"
+        },
+        "creator_share": "0.500000000000000000",
+        "interest_rate": "1.050000000000000000",
+        "staking_admins": [
+          "tru1pppc66kd55fsyr0fqjmr9ynnt45e5ll7enl7us"
+        ],
+        "stake_limit_percent": "0.667000000000000000",
+        "stake_limit_days": "604800000000000",
+        "unjail_upvotes": "1",
+        "max_arguments_per_claim": "5"
       },
-      "last_total_power": "0",
-      "last_validator_powers": null,
-      "validators": null,
-      "delegations": null,
-      "unbonding_delegations": null,
-      "redelegations": null,
-      "exported": false
+      "stakes": null,
+      "users_earnings": null
+    },
+    "auth": {
+      "params": {
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      },
+      "accounts": [
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "address": "tru122lxw5550pdwrdc3ddd4mgqychtgucyrjav4t9",
+            "coins": [
+              {
+                "denom": "utru",
+                "amount": "10000000000"
+              }
+            ],
+            "public_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "address": "tru1pppc66kd55fsyr0fqjmr9ynnt45e5ll7enl7us",
+            "coins": [
+              {
+                "denom": "utru",
+                "amount": "10000000000"
+              }
+            ],
+            "public_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "address": "tru1668m96unc8e77ty2dzhhuaqj9qp04582algm7s",
+            "coins": [
+              {
+                "denom": "utru",
+                "amount": "10000000000"
+              }
+            ],
+            "public_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "address": "tru1u4eaet92wlvpvfcq62r79vf5mpng7jmzgedgxu",
+            "coins": [
+              {
+                "denom": "utru",
+                "amount": "10000000000"
+              }
+            ],
+            "public_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "address": "tru1lnl3ck20rl9vzk0eerfluyhjyl0jukr43p4u94",
+            "coins": [
+              {
+                "denom": "utru",
+                "amount": "10000000000"
+              }
+            ],
+            "public_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "address": "tru1afactnpzk98s2uuxzqae6mr7zgudels4s4ad65",
+            "coins": [
+              {
+                "denom": "utru",
+                "amount": "10000000000"
+              }
+            ],
+            "public_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "address": "tru18d3l2agflzchlz4pm0my63dvh5f4sdduwt2tca",
+            "coins": [
+              {
+                "denom": "utru",
+                "amount": "10000000000"
+              }
+            ],
+            "public_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "address": "tru1rh2a8r0u8mllh08zddeyz5qx2x4tu38zmxdu26",
+            "coins": [
+              {
+                "denom": "utru",
+                "amount": "10000000000"
+              }
+            ],
+            "public_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "address": "tru1qyv8mkw30mahm6ym26ug07p67mxxp330qzadl9",
+            "coins": [
+              {
+                "denom": "utru",
+                "amount": "10000000000"
+              }
+            ],
+            "public_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "address": "tru1exx8sgxsad3h6we4mzdu60aqdvvu6r88jgl5qj",
+            "coins": [
+              {
+                "denom": "utru",
+                "amount": "10000000000"
+              }
+            ],
+            "public_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          }
+        },
+        {
+          "type": "cosmos-sdk/Account",
+          "value": {
+            "address": "tru1nle426vz4xs8gcxcp730yhk32g2vtmqyxp2zky",
+            "coins": [
+              {
+                "denom": "utru",
+                "amount": "10000000000"
+              }
+            ],
+            "public_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          }
+        }
+      ]
     },
     "distribution": {
       "fee_pool": {
@@ -901,6 +856,22 @@
       "delegator_starting_infos": [],
       "validator_slash_events": []
     },
+    "account": {
+      "app_accounts": null,
+      "params": {
+        "registrar": "tru1pppc66kd55fsyr0fqjmr9ynnt45e5ll7enl7us",
+        "max_slash_count": "3",
+        "jail_duration": "604800000000000",
+        "user_growth_allocation": "0.200000000000000000",
+        "stakeholder_allocation": "0.200000000000000000"
+      }
+    },
+    "crisis": {
+      "constant_fee": {
+        "denom": "utru",
+        "amount": "1000"
+      }
+    },
     "truslashing": {
       "slashes": null,
       "params": {
@@ -911,10 +882,24 @@
           "amount": "10000000"
         },
         "slash_admins": [
-          "cosmos13khv88xxuaevj2rte07y69xwcfmdkdduz9fwrh"
+          "tru1pppc66kd55fsyr0fqjmr9ynnt45e5ll7enl7us"
         ],
         "curator_share": "0.250000000000000000",
         "max_detailed_reason_length": "140"
+      }
+    },
+    "params": null,
+    "bank": {
+      "send_enabled": true
+    },
+    "claim": {
+      "claims": null,
+      "params": {
+        "min_claim_length": "25",
+        "max_claim_length": "140",
+        "claim_admins": [
+          "tru1pppc66kd55fsyr0fqjmr9ynnt45e5ll7enl7us"
+        ]
       }
     }
   }
