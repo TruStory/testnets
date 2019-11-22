@@ -1,46 +1,46 @@
 {
-    "type": "cosmos-sdk/StdTx",
-    "value": {
-      "msg": [
-        {
-          "type": "cosmos-sdk/MsgCreateValidator",
+  "type": "cosmos-sdk/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "aguacate",
+            "identity": "",
+            "website": "jhernandez.me",
+            "security_contact": "",
+            "details": ""
+          },
+          "commission": {
+            "rate": "0.100000000000000000",
+            "max_rate": "0.200000000000000000",
+            "max_change_rate": "0.010000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "cosmos1lnl3ck20rl9vzk0eerfluyhjyl0jukr4hjxmlh",
+          "validator_address": "cosmosvaloper1lnl3ck20rl9vzk0eerfluyhjyl0jukr4jxjwny",
+          "pubkey": "cosmosvalconspub1zcjduepq7jvatact8ygrccvd8q0kslmlyzpsftrrllcsvmgd32pyrrgk6aps2g3j2c",
           "value": {
-            "description": {
-              "moniker": "aguacate",
-              "identity": "",
-              "website": "jhernandez.me",
-              "security_contact": "",
-              "details": ""
-            },
-            "commission": {
-              "rate": "0.100000000000000000",
-              "max_rate": "0.200000000000000000",
-              "max_change_rate": "0.010000000000000000"
-            },
-            "min_self_delegation": "1",
-            "delegator_address": "cosmos1lnl3ck20rl9vzk0eerfluyhjyl0jukr4hjxmlh",
-            "validator_address": "cosmosvaloper1lnl3ck20rl9vzk0eerfluyhjyl0jukr4jxjwny",
-            "pubkey": "cosmosvalconspub1zcjduepq7jvatact8ygrccvd8q0kslmlyzpsftrrllcsvmgd32pyrrgk6aps2g3j2c",
-            "value": {
-              "denom": "utru",
-              "amount": "10000000000"
-            }
+            "denom": "utru",
+            "amount": "10000000000"
           }
         }
-      ],
-      "fee": {
-        "amount": [],
-        "gas": "200000"
-      },
-      "signatures": [
-        {
-          "pub_key": {
-            "type": "tendermint/PubKeySecp256k1",
-            "value": "A6DbpfSqDg+fcdT9rV56erlcoOJhaOQ9hY5ckyOPW0mg"
-          },
-          "signature": "GRczNtvSZsBguSIBNeOS2FPAVzhzE2DBe2Ruo/qBUbBEjH4Pua1uMJLJ6rDcs98eH1868OH/XrE+AdD2cLgKgw=="
-        }
-      ],
-      "memo": "42e35dc33e90acecc00f2a29fe397cb3c26e2db7@52.52.237.128:26656"
-    }
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "A6DbpfSqDg+fcdT9rV56erlcoOJhaOQ9hY5ckyOPW0mg"
+        },
+        "signature": "GRczNtvSZsBguSIBNeOS2FPAVzhzE2DBe2Ruo/qBUbBEjH4Pua1uMJLJ6rDcs98eH1868OH/XrE+AdD2cLgKgw=="
+      }
+    ],
+    "memo": "42e35dc33e90acecc00f2a29fe397cb3c26e2db7@52.52.237.128:26656"
   }
+}
