@@ -1,6 +1,6 @@
 ![logo](./logo.jpg)
 
-# ⚠️ Testnet-1 Update (work in progress..)
+# ⚠️ Testnet-1 Update (work in progress...)
 
 Please update your binaries to the latest release [v0.4.0-beta](https://github.com/TruStory/truchain/releases/tag/v0.4.0-beta):
 ```sh
