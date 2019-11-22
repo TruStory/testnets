@@ -9,9 +9,6 @@ for i in $NETWORK/gentx/*.json; do
   echo $i
   truchaind add-genesis-account $(jq -r '.value.msg[0].value.delegator_address' $i) $(jq -r '.value.msg[0].value.value.amount' $i)$(jq -r '.value.msg[0].value.value.denom' $i)
   cp $i $CONFIG/gentx/
-  cat $i | jq > /tmp/gentx.json
-  cp /tmp/gentx.json $i
-  rm /tmp/gentx.json
 done
 truchaind collect-gentxs
 
