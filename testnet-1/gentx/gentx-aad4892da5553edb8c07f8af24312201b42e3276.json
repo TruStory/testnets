@@ -18,9 +18,9 @@
             "max_change_rate": "0.010000000000000000"
           },
           "min_self_delegation": "1",
-          "delegator_address": "cosmos18d3l2agflzchlz4pm0my63dvh5f4sddugcevzl",
-          "validator_address": "cosmosvaloper18d3l2agflzchlz4pm0my63dvh5f4sddudvdewv",
-          "pubkey": "cosmosvalconspub1zcjduepquaqkp6vaty3krq6x7mq6pkuk09v4ak6v5jjfd33qdnmtxc6rgdgqxa9df7",
+          "delegator_address": "tru18d3l2agflzchlz4pm0my63dvh5f4sdduwt2tca",
+          "validator_address": "truvaloper18d3l2agflzchlz4pm0my63dvh5f4sddu06mgzw",
+          "pubkey": "truvalconspub1zcjduepquaqkp6vaty3krq6x7mq6pkuk09v4ak6v5jjfd33qdnmtxc6rgdgqus8pj3",
           "value": {
             "denom": "utru",
             "amount": "10000000000"
