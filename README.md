@@ -8,8 +8,8 @@ Genesis transaction submission deadline: Nov 22nd at 5pm PST (0100 GMT)
 
 Please update your binaries to the latest release [v0.4.1-beta](https://github.com/TruStory/truchain/releases/tag/v0.4.1-beta):
 ```sh
-wget https://github.com/TruStory/truchain/releases/download/v0.4.1-beta/truchain-v0.4.1-beta.tar.gz
-mkdir -p ~/bin && tar xzvf truchain-v0.4.1-beta.tar.gz -C ~/bin
+$ wget https://github.com/TruStory/truchain/releases/download/v0.4.1-beta/truchain-v0.4.1-beta.tar.gz
+$ mkdir -p ~/bin && tar xzvf truchain-v0.4.1-beta.tar.gz -C ~/bin
 ```
  
 ## Overview
@@ -28,15 +28,15 @@ The latest testnet is [testnet-1](https://github.com/TruStory/testnets/tree/mast
 
 Download Linux binaries:
 ```sh
-wget https://github.com/TruStory/truchain/releases/download/v0.4.1-beta/truchain-v0.4.1-beta.tar.gz
-mkdir -p ~/bin && tar xzvf truchain-v0.4.1-beta.tar.gz -C ~/bin
+$ wget https://github.com/TruStory/truchain/releases/download/v0.4.1-beta/truchain-v0.4.1-beta.tar.gz
+$ mkdir -p ~/bin && tar xzvf truchain-v0.4.1-beta.tar.gz -C ~/bin
 ```
 
 Alternatively, build from source:
 ```sh
-git clone https://github.com/trustory/truchain
-cd truchain && git checkout v0.4.1-beta
-make install
+$ git clone https://github.com/trustory/truchain
+$ cd truchain && git checkout v0.4.1-beta
+$ make install
 ```
 
 Make sure you have the right version:
@@ -58,7 +58,7 @@ For full instructions, see [https://github.com/TruStory/truchain](https://github
 
 ```sh
 # <name> is the name of your validator's account, i.e: validator
-truchaincli keys add <name>
+$ truchaincli keys add <name>
 ```
 Make sure you save the mnemonic in a safe place!
 
@@ -66,13 +66,13 @@ Make sure you save the mnemonic in a safe place!
 
 ```sh
 # <moniker> is the name of your validator node
-truchaind init --chain-id=testnet-1 <moniker>
+$ truchaind init --chain-id=testnet-1 <moniker>
 
 # <name> is the name of validator's account (from above)
-truchaind add-genesis-account $(truchaincli keys show <name> -a) 10000000000utru
+$ truchaind add-genesis-account $(truchaincli keys show <name> -a) 10000000000utru
 
 # <node_ip_address> is the public IP address of your node
-truchaind gentx --name <name> --amount 10000000000utru --ip <node_ip_address>
+$ truchaind gentx --name <name> --amount 10000000000utru --ip <node_ip_address>
 ```
 
 This generates a JSON file that contains the chain transaction that creates your validator with an allocation of 10,000 TRU. 
@@ -88,23 +88,23 @@ Click "Fork" on top-right corner of page. Navigate to your fork, then:
 
 ```sh
 # create a local clone
-git clone https://github.com/<your-username>/testnets
+$ git clone https://github.com/<your-username>/testnets
 
 # configure remote repo for your fork
-cd testnets
-git remote add upstream https://github.com/TruStory/testnets
+$ cd testnets
+$ git remote add upstream https://github.com/TruStory/testnets
 
 # create a local branch
-git checkout --branch <your-branch>
+$ git checkout --branch <your-branch>
 
 # copy over gentx file
-cp ~/.truchaind/config/gentx/*.json testnet-1/gentx
+$ cp ~/.truchaind/config/gentx/*.json testnet-1/gentx
 
 # add changes to git
-git add . && git commit -m "Added gentx for <your-validator-moniker>"
+$ git add . && git commit -m "Added gentx for <your-validator-moniker>"
 
 # push your branch
-git push origin
+$ git push origin
 ```
 
 [Submit a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork) to get your genesis transaction added.
