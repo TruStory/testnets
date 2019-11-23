@@ -6,11 +6,11 @@ Testnet-1 genesis start time: Nov 26th 9AM PST (1700 GMT)
 
 Genesis transaction submission deadline: Nov 22nd at 5pm PST (0100 GMT)
 
-Please update your binaries to the latest release [v0.4.0-beta](https://github.com/TruStory/truchain/releases/tag/v0.4.0-beta):
+Please update your binaries to the latest release [v0.4.1-beta](https://github.com/TruStory/truchain/releases/tag/v0.4.1-beta):
 ```sh
 mkdir -p ~/bin
-wget https://github.com/TruStory/truchain/releases/download/v0.4.0-beta/truchain-0.4.0-beta.tar.gz
-tar xzvf truchain-0.4.0-beta.tar.gz -C ~/bin
+wget https://github.com/TruStory/truchain/releases/download/v0.4.1-beta/truchain-v0.4.1-beta.tar.gz
+tar xzvf truchain-v0.4.1-beta.tar.gz -C ~/bin
 ```
  
 ## Overview
@@ -30,15 +30,26 @@ The latest testnet is [testnet-1](https://github.com/TruStory/testnets/tree/mast
 Download Linux binaries:
 ```sh
 mkdir -p ~/bin
-wget https://github.com/TruStory/truchain/releases/download/v0.4.0-beta/truchain-0.4.0-beta.tar.gz
-tar xzvf truchain-0.4.0-beta.tar.gz -C ~/bin
+wget https://github.com/TruStory/truchain/releases/download/v0.4.1-beta/truchain-v0.4.1-beta.tar.gz
+tar xzvf truchain-v0.4.1-beta.tar.gz -C ~/bin
 ```
 
 Alternatively, build from source:
 ```sh
 git clone https://github.com/trustory/truchain
-cd truchain && git checkout v0.4.0-beta
+cd truchain && git checkout v0.4.1-beta
 make install
+```
+
+Make sure you have the right version:
+```sh
+$ truchaind version  --long
+name: truchain
+server_name: truchaind
+client_name: truchaincli
+version: v0.4.1-beta
+commit: 6ca8dcaf14b1e77f071c3929f5271b66cf3f80ed
+go: go version go1.13.1 linux/amd64
 ```
 
 Please build from source for non-Linux systems for now.
@@ -57,7 +68,7 @@ Make sure you save the mnemonic in a safe place!
 
 ```sh
 # <moniker> is the name of your validator node
-truchaind init --chain-id=testnet-1 <moniker> $(truchaincli keys show <name> -a)
+truchaind init --chain-id=testnet-1 <moniker>
 
 # <name> is the name of validator's account (from above)
 truchaind add-genesis-account $(truchaincli keys show <name> -a) 10000000000utru
