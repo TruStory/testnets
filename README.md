@@ -41,7 +41,7 @@ make install
 
 Make sure you have the right version:
 ```sh
-$ truchaind version  --long
+$ truchaind version --long
 name: truchain
 server_name: truchaind
 client_name: truchaincli
