@@ -29,9 +29,8 @@ The latest testnet is [testnet-1](https://github.com/TruStory/testnets/tree/mast
 
 Download Linux binaries:
 ```sh
-mkdir -p ~/bin
 wget https://github.com/TruStory/truchain/releases/download/v0.4.1-beta/truchain-v0.4.1-beta.tar.gz
-tar xzvf truchain-v0.4.1-beta.tar.gz -C ~/bin
+mkdir -p ~/bin && tar xzvf truchain-v0.4.1-beta.tar.gz -C ~/bin
 ```
 
 Alternatively, build from source:
