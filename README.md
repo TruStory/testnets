@@ -8,9 +8,8 @@ Genesis transaction submission deadline: Nov 22nd at 5pm PST (0100 GMT)
 
 Please update your binaries to the latest release [v0.4.1-beta](https://github.com/TruStory/truchain/releases/tag/v0.4.1-beta):
 ```sh
-mkdir -p ~/bin
 wget https://github.com/TruStory/truchain/releases/download/v0.4.1-beta/truchain-v0.4.1-beta.tar.gz
-tar xzvf truchain-v0.4.1-beta.tar.gz -C ~/bin
+mkdir -p ~/bin && tar xzvf truchain-v0.4.1-beta.tar.gz -C ~/bin
 ```
  
 ## Overview
