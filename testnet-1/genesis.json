@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2019-11-24T03:01:48.326221941Z",
+  "genesis_time": "2019-11-26T17:00:00.00Z",
   "chain_id": "testnet-1",
   "consensus_params": {
     "block": {
