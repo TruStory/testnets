@@ -21,7 +21,7 @@ TruChain requires a public static IP address (i.e: [AWS Elastic IP](https://docs
 
 Increase resource limits for [Tendermint](https://tendermint.com):
 ```
-ulimit -n 4096
+$ ulimit -n 4096
 ```
 
 ### Make a system service (optional)
@@ -29,7 +29,7 @@ ulimit -n 4096
 Creating a system service makes it easy to start and stop truchaind, and view logs.
 
 ```
-sudo nano /etc/systemd/system/truchaind.service
+$ sudo nano /etc/systemd/system/truchaind.service
 ```
 
 Paste the following:
@@ -53,20 +53,20 @@ WantedBy=multi-user.target
 
 Enable the service:
 ```
-sudo systemctl enable truchaind
+$ sudo systemctl enable truchaind
 ```
 
 Start node:
 ```
-sudo systemctl start truchaind
+$ sudo systemctl start truchaind
 ```
 
 Stop node:
 ```
-sudo systemctl stop truchaind
+$ sudo systemctl stop truchaind
 ```
 
 Check logs:
 ```
-journalctl -u truchaind -f
+$ journalctl -u truchaind -f
 ```
