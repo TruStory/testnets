@@ -50,7 +50,7 @@ The latest testnet is [testnet-1](https://github.com/TruStory/testnets/tree/mast
 
 Download Linux binaries:
 ```sh
-$ wget https://github.com/TruStory/truchain/releases/download/v0.4.1-beta/truchain-v0.4.2-beta.tar.gz
+$ wget https://github.com/TruStory/truchain/releases/download/v0.4.2-beta/truchain-v0.4.2-beta.tar.gz
 $ mkdir -p ~/bin && tar xzvf truchain-v0.4.2-beta.tar.gz -C ~/bin
 ```
 
