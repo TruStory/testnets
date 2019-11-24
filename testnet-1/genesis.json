@@ -31,7 +31,7 @@
       "missed_blocks": {}
     },
     "bank": {
-      "send_enabled": false
+      "send_enabled": true
     },
     "truslashing": {
       "slashes": [],
