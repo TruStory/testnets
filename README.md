@@ -9,10 +9,10 @@
 **Genesis start time:             Nov 26th 9am PST (1700 GMT)**
 
 
-Please update your binaries to the latest release [v0.4.1-beta](https://github.com/TruStory/truchain/releases/tag/v0.4.1-beta):
+Please update your binaries to the latest release [v0.4.2-beta](https://github.com/TruStory/truchain/releases/tag/v0.4.2-beta):
 ```
-$ wget https://github.com/TruStory/truchain/releases/download/v0.4.1-beta/truchain-v0.4.1-beta.tar.gz
-$ mkdir -p ~/bin && tar xzvf truchain-v0.4.1-beta.tar.gz -C ~/bin
+$ wget https://github.com/TruStory/truchain/releases/download/v0.4.2-beta/truchain-v0.4.2-beta.tar.gz
+$ mkdir -p ~/bin && tar xzvf truchain-v0.4.2-beta.tar.gz -C ~/bin
 ```
 
 After the genesis availability date, download the genesis file to your chain config directory:
@@ -23,7 +23,7 @@ $ wget -O .truchaind/config/genesis.json https://raw.githubusercontent.com/TruSt
 Verify the checksum:
 ```
 $ sha256sum .truchaind/config/genesis.json
-c1034a2e41a8028ccbcd476f5ca617ba5a069960e671c69a2ae47f9ad086bb99  genesis.json
+c1034a2e41a8028ccbcd476f5ca617ba5a069960e671c69a2ae47f9ad086bb99 genesis.json
 ```
 
 Before the genesis start time, start your chain:
@@ -50,14 +50,14 @@ The latest testnet is [testnet-1](https://github.com/TruStory/testnets/tree/mast
 
 Download Linux binaries:
 ```sh
-$ wget https://github.com/TruStory/truchain/releases/download/v0.4.1-beta/truchain-v0.4.1-beta.tar.gz
-$ mkdir -p ~/bin && tar xzvf truchain-v0.4.1-beta.tar.gz -C ~/bin
+$ wget https://github.com/TruStory/truchain/releases/download/v0.4.1-beta/truchain-v0.4.2-beta.tar.gz
+$ mkdir -p ~/bin && tar xzvf truchain-v0.4.2-beta.tar.gz -C ~/bin
 ```
 
 Alternatively, build from source:
 ```sh
 $ git clone https://github.com/trustory/truchain
-$ cd truchain && git checkout v0.4.1-beta
+$ cd truchain && git checkout v0.4.2-beta
 $ make install
 ```
 
@@ -67,8 +67,8 @@ $ truchaind version --long
 name: truchain
 server_name: truchaind
 client_name: truchaincli
-version: v0.4.1-beta
-commit: 6ca8dcaf14b1e77f071c3929f5271b66cf3f80ed
+version: v0.4.2-beta
+commit: 42cb4328b2b25dcb94db53fa53de5097cc6a07d2
 go: go version go1.13.1 linux/amd64
 ```
 
