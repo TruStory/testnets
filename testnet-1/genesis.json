@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2019-11-22T09:38:52.978298893Z",
+  "genesis_time": "2019-11-24T03:01:48.326221941Z",
   "chain_id": "testnet-1",
   "consensus_params": {
     "block": {
@@ -18,6 +18,118 @@
   },
   "app_hash": "",
   "app_state": {
+    "slashing": {
+      "params": {
+        "max_evidence_age": "120000000000",
+        "signed_blocks_window": "100",
+        "min_signed_per_window": "0.500000000000000000",
+        "downtime_jail_duration": "600000000000",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.010000000000000000"
+      },
+      "signing_infos": {},
+      "missed_blocks": {}
+    },
+    "bank": {
+      "send_enabled": true
+    },
+    "truslashing": {
+      "slashes": [],
+      "params": {
+        "min_slash_count": "5",
+        "slash_magnitude": "3",
+        "slash_min_stake": {
+          "denom": "utru",
+          "amount": "10000000"
+        },
+        "slash_admins": [],
+        "curator_share": "0.250000000000000000",
+        "max_detailed_reason_length": "140"
+      }
+    },
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposits": null,
+      "votes": null,
+      "proposals": null,
+      "deposit_params": {
+        "min_deposit": [
+          {
+            "denom": "utru",
+            "amount": "10000000"
+          }
+        ],
+        "max_deposit_period": "172800000000000"
+      },
+      "voting_params": {
+        "voting_period": "172800000000000"
+      },
+      "tally_params": {
+        "quorum": "0.334000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto": "0.334000000000000000"
+      }
+    },
+    "staking": {
+      "params": {
+        "unbonding_time": "1814400000000000",
+        "max_validators": 100,
+        "max_entries": 7,
+        "bond_denom": "utru"
+      },
+      "last_total_power": "0",
+      "last_validator_powers": null,
+      "validators": null,
+      "delegations": null,
+      "unbonding_delegations": null,
+      "redelegations": null,
+      "exported": false
+    },
+    "trudistribution": {
+      "params": {
+        "user_growth_allocation": "0.250000000000000000",
+        "user_reward_allocation": "0.250000000000000000",
+        "stakeholder_allocation": "0.250000000000000000"
+      }
+    },
+    "crisis": {
+      "constant_fee": {
+        "denom": "utru",
+        "amount": "1000"
+      }
+    },
+    "community": {
+      "communities": [
+        {
+          "id": "crypto",
+          "name": "Cryptocurrency",
+          "description": "description string",
+          "created_time": "2019-11-24T03:01:48.325711213Z"
+        },
+        {
+          "id": "meme",
+          "name": "Memes",
+          "description": "description string",
+          "created_time": "2019-11-24T03:01:48.325713089Z"
+        }
+      ],
+      "params": {
+        "min_id_length": "3",
+        "max_id_length": "15",
+        "min_name_length": "5",
+        "max_name_length": "25",
+        "max_description_length": "140",
+        "community_admins": []
+      }
+    },
+    "claim": {
+      "claims": null,
+      "params": {
+        "min_claim_length": "25",
+        "max_claim_length": "140",
+        "claim_admins": []
+      }
+    },
     "genutil": {
       "gentxs": [
         {
@@ -64,52 +176,6 @@
               }
             ],
             "memo": "05eb01050d49a402f4e38a22939e95f4949b1051@94.237.46.202:26656"
-          }
-        },
-        {
-          "type": "cosmos-sdk/StdTx",
-          "value": {
-            "msg": [
-              {
-                "type": "cosmos-sdk/MsgCreateValidator",
-                "value": {
-                  "description": {
-                    "moniker": "blockshane",
-                    "identity": "",
-                    "website": "",
-                    "security_contact": "",
-                    "details": ""
-                  },
-                  "commission": {
-                    "rate": "0.100000000000000000",
-                    "max_rate": "0.200000000000000000",
-                    "max_change_rate": "0.010000000000000000"
-                  },
-                  "min_self_delegation": "1",
-                  "delegator_address": "tru1pppc66kd55fsyr0fqjmr9ynnt45e5ll7enl7us",
-                  "validator_address": "truvaloper1pppc66kd55fsyr0fqjmr9ynnt45e5ll7czwaxr",
-                  "pubkey": "truvalconspub1zcjduepqrs4ghvhkcnj5l7g5elc0tu7fn3pwqu3390dl60pl5pcgw5t9mdvshknrrz",
-                  "value": {
-                    "denom": "utru",
-                    "amount": "10000000000"
-                  }
-                }
-              }
-            ],
-            "fee": {
-              "amount": [],
-              "gas": "200000"
-            },
-            "signatures": [
-              {
-                "pub_key": {
-                  "type": "tendermint/PubKeySecp256k1",
-                  "value": "AltEQr47uz/rOgnqd4ji7gh2lURhtfOpD238C5/SljZM"
-                },
-                "signature": "wkZLMVpgQ5w0skDrMSAlXOR5VOaYbPtnrSdZ46TYcr0yYHzC6DWrSoqzgRwiTpNtKhSvMKbvCo2EEwFk8CJh8w=="
-              }
-            ],
-            "memo": "267f9165a57da281721c3cf58adfeb9d506b7777@13.52.13.214:26656"
           }
         },
         {
@@ -488,6 +554,52 @@
                 "type": "cosmos-sdk/MsgCreateValidator",
                 "value": {
                   "description": {
+                    "moniker": "blockshane",
+                    "identity": "",
+                    "website": "",
+                    "security_contact": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "tru1ju58e27mh2vxupaw65we07tqnx2auqzpwjjzlm",
+                  "validator_address": "truvaloper1ju58e27mh2vxupaw65we07tqnx2auqzp0rrp9g",
+                  "pubkey": "truvalconspub1zcjduepqfn5ljz27ygv5p33sxlzx9x5pflhpart8nm9flqs6urax9tdtc3nqnj34ha",
+                  "value": {
+                    "denom": "utru",
+                    "amount": "100000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AuodXLf7CZa8hsZbY1I1DOYFoQqw0wGWCyJAupKQOpc9"
+                },
+                "signature": "7rlOtgOMd78wsJW9jeARgiZt7g00j9PSxNI//T6VCvZFHq9EM9I0kcIr1sMWQMNcKoWnn6c6O+9lGR128R+9mg=="
+              }
+            ],
+            "memo": "c86fe442b5febdd2539d322af83d9c55f57d57fd@13.52.13.214:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
                     "moniker": "witval",
                     "identity": "",
                     "website": "",
@@ -528,140 +640,32 @@
         }
       ]
     },
-    "trubank": {
-      "transactions": null,
+    "distribution": {
+      "fee_pool": {
+        "community_pool": []
+      },
+      "community_tax": "0.020000000000000000",
+      "base_proposer_reward": "0.010000000000000000",
+      "bonus_proposer_reward": "0.040000000000000000",
+      "withdraw_addr_enabled": true,
+      "delegator_withdraw_infos": [],
+      "previous_proposer": "",
+      "outstanding_rewards": [],
+      "validator_accumulated_commissions": [],
+      "validator_historical_rewards": [],
+      "validator_current_rewards": [],
+      "delegator_starting_infos": [],
+      "validator_slash_events": []
+    },
+    "account": {
+      "app_accounts": null,
       "params": {
-        "reward_broker_address": "tru1pppc66kd55fsyr0fqjmr9ynnt45e5ll7enl7us"
+        "registrar": "tru1tfpcnjzkthft3ynewqvn7mtdk7guf3kn57n000",
+        "max_slash_count": "3",
+        "jail_duration": "604800000000000",
+        "user_growth_allocation": "0.200000000000000000",
+        "stakeholder_allocation": "0.200000000000000000"
       }
-    },
-    "trudistribution": {
-      "params": {
-        "user_growth_allocation": "0.250000000000000000",
-        "user_reward_allocation": "0.250000000000000000",
-        "stakeholder_allocation": "0.250000000000000000"
-      }
-    },
-    "staking": {
-      "params": {
-        "unbonding_time": "1814400000000000",
-        "max_validators": 100,
-        "max_entries": 7,
-        "bond_denom": "utru"
-      },
-      "last_total_power": "0",
-      "last_validator_powers": null,
-      "validators": null,
-      "delegations": null,
-      "unbonding_delegations": null,
-      "redelegations": null,
-      "exported": false
-    },
-    "supply": {
-      "supply": []
-    },
-    "community": {
-      "communities": [
-        {
-          "id": "crypto",
-          "name": "Cryptocurrency",
-          "description": "description string",
-          "created_time": "2019-11-22T09:38:52.977886073Z"
-        },
-        {
-          "id": "meme",
-          "name": "Memes",
-          "description": "description string",
-          "created_time": "2019-11-22T09:38:52.977887876Z"
-        }
-      ],
-      "params": {
-        "min_id_length": "3",
-        "max_id_length": "15",
-        "min_name_length": "5",
-        "max_name_length": "25",
-        "max_description_length": "140",
-        "community_admins": [
-          "tru1pppc66kd55fsyr0fqjmr9ynnt45e5ll7enl7us"
-        ]
-      }
-    },
-    "slashing": {
-      "params": {
-        "max_evidence_age": "120000000000",
-        "signed_blocks_window": "100",
-        "min_signed_per_window": "0.500000000000000000",
-        "downtime_jail_duration": "600000000000",
-        "slash_fraction_double_sign": "0.050000000000000000",
-        "slash_fraction_downtime": "0.010000000000000000"
-      },
-      "signing_infos": {},
-      "missed_blocks": {}
-    },
-    "mint": {
-      "minter": {
-        "inflation": "0.130000000000000000",
-        "annual_provisions": "0.000000000000000000"
-      },
-      "params": {
-        "mint_denom": "utru",
-        "inflation_rate_change": "0.130000000000000000",
-        "inflation_max": "0.200000000000000000",
-        "inflation_min": "0.070000000000000000",
-        "goal_bonded": "0.670000000000000000",
-        "blocks_per_year": "6311520"
-      }
-    },
-    "gov": {
-      "starting_proposal_id": "1",
-      "deposits": null,
-      "votes": null,
-      "proposals": null,
-      "deposit_params": {
-        "min_deposit": [
-          {
-            "denom": "utru",
-            "amount": "10000000"
-          }
-        ],
-        "max_deposit_period": "172800000000000"
-      },
-      "voting_params": {
-        "voting_period": "172800000000000"
-      },
-      "tally_params": {
-        "quorum": "0.334000000000000000",
-        "threshold": "0.500000000000000000",
-        "veto": "0.334000000000000000"
-      }
-    },
-    "trustaking": {
-      "arguments": null,
-      "params": {
-        "period": "604800000000000",
-        "argument_creation_stake": {
-          "denom": "utru",
-          "amount": "50000000"
-        },
-        "argument_body_max_length": "1250",
-        "argument_body_min_length": "25",
-        "argument_summary_max_length": "140",
-        "argument_summary_min_length": "25",
-        "upvote_stake": {
-          "denom": "utru",
-          "amount": "10000000"
-        },
-        "creator_share": "0.500000000000000000",
-        "interest_rate": "1.050000000000000000",
-        "staking_admins": [
-          "tru1pppc66kd55fsyr0fqjmr9ynnt45e5ll7enl7us"
-        ],
-        "stake_limit_percent": "0.667000000000000000",
-        "stake_limit_days": "604800000000000",
-        "unjail_upvotes": "1",
-        "max_arguments_per_claim": "5"
-      },
-      "stakes": null,
-      "users_earnings": null
     },
     "auth": {
       "params": {
@@ -675,11 +679,11 @@
         {
           "type": "cosmos-sdk/Account",
           "value": {
-            "address": "tru122lxw5550pdwrdc3ddd4mgqychtgucyrjav4t9",
+            "address": "tru1ju58e27mh2vxupaw65we07tqnx2auqzpwjjzlm",
             "coins": [
               {
                 "denom": "utru",
-                "amount": "10000000000"
+                "amount": "100000000000"
               }
             ],
             "public_key": null,
@@ -690,7 +694,7 @@
         {
           "type": "cosmos-sdk/Account",
           "value": {
-            "address": "tru1pppc66kd55fsyr0fqjmr9ynnt45e5ll7enl7us",
+            "address": "tru122lxw5550pdwrdc3ddd4mgqychtgucyrjav4t9",
             "coins": [
               {
                 "denom": "utru",
@@ -839,67 +843,55 @@
         }
       ]
     },
-    "distribution": {
-      "fee_pool": {
-        "community_pool": []
-      },
-      "community_tax": "0.020000000000000000",
-      "base_proposer_reward": "0.010000000000000000",
-      "bonus_proposer_reward": "0.040000000000000000",
-      "withdraw_addr_enabled": true,
-      "delegator_withdraw_infos": [],
-      "previous_proposer": "",
-      "outstanding_rewards": [],
-      "validator_accumulated_commissions": [],
-      "validator_historical_rewards": [],
-      "validator_current_rewards": [],
-      "delegator_starting_infos": [],
-      "validator_slash_events": []
+    "params": null,
+    "supply": {
+      "supply": []
     },
-    "account": {
-      "app_accounts": null,
+    "trustaking": {
+      "arguments": [],
       "params": {
-        "registrar": "tru1pppc66kd55fsyr0fqjmr9ynnt45e5ll7enl7us",
-        "max_slash_count": "3",
-        "jail_duration": "604800000000000",
-        "user_growth_allocation": "0.200000000000000000",
-        "stakeholder_allocation": "0.200000000000000000"
-      }
-    },
-    "crisis": {
-      "constant_fee": {
-        "denom": "utru",
-        "amount": "1000"
-      }
-    },
-    "truslashing": {
-      "slashes": null,
-      "params": {
-        "min_slash_count": "5",
-        "slash_magnitude": "3",
-        "slash_min_stake": {
+        "period": "604800000000000",
+        "argument_creation_stake": {
+          "denom": "utru",
+          "amount": "50000000"
+        },
+        "argument_body_max_length": "1250",
+        "argument_body_min_length": "25",
+        "argument_summary_max_length": "140",
+        "argument_summary_min_length": "25",
+        "upvote_stake": {
           "denom": "utru",
           "amount": "10000000"
         },
-        "slash_admins": [
-          "tru1pppc66kd55fsyr0fqjmr9ynnt45e5ll7enl7us"
-        ],
-        "curator_share": "0.250000000000000000",
-        "max_detailed_reason_length": "140"
+        "creator_share": "0.500000000000000000",
+        "interest_rate": "1.050000000000000000",
+        "staking_admins": [],
+        "stake_limit_percent": "0.667000000000000000",
+        "stake_limit_days": "604800000000000",
+        "unjail_upvotes": "1",
+        "max_arguments_per_claim": "5"
+      },
+      "stakes": [],
+      "users_earnings": []
+    },
+    "trubank": {
+      "transactions": null,
+      "params": {
+        "reward_broker_address": "tru1tfpcnjzkthft3ynewqvn7mtdk7guf3kn57n000"
       }
     },
-    "params": null,
-    "bank": {
-      "send_enabled": true
-    },
-    "claim": {
-      "claims": null,
+    "mint": {
+      "minter": {
+        "inflation": "0.130000000000000000",
+        "annual_provisions": "0.000000000000000000"
+      },
       "params": {
-        "min_claim_length": "25",
-        "max_claim_length": "140",
-        "claim_admins": [
-          "tru1pppc66kd55fsyr0fqjmr9ynnt45e5ll7enl7us"
-        ]
+        "mint_denom": "utru",
+        "inflation_rate_change": "0.130000000000000000",
+        "inflation_max": "0.200000000000000000",
+        "inflation_min": "0.070000000000000000",
+        "goal_bonded": "0.670000000000000000",
+        "blocks_per_year": "6311520"
       }
     }
   }
