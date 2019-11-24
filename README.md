@@ -2,16 +2,38 @@
 
 # ⚠️ Testnet-1 Update
 
-Testnet-1 genesis start time: Nov 26th 9AM PST (1700 GMT)
+**Genesis transaction submission: Nov 22nd 5pm PST (0100 GMT)**
 
-Genesis transaction submission deadline: Nov 22nd at 5pm PST (0100 GMT)
+**Genesis file availability:      Nov 25th 10am PST (1800 GMT)**
+
+**Genesis start time:             Nov 26th 9am PST (1700 GMT)**
+
 
 Please update your binaries to the latest release [v0.4.1-beta](https://github.com/TruStory/truchain/releases/tag/v0.4.1-beta):
-```sh
+```
 $ wget https://github.com/TruStory/truchain/releases/download/v0.4.1-beta/truchain-v0.4.1-beta.tar.gz
 $ mkdir -p ~/bin && tar xzvf truchain-v0.4.1-beta.tar.gz -C ~/bin
 ```
- 
+
+After the genesis availability date, download the genesis file to your chain config directory:
+```
+$ wget -O .truchaind/config/genesis.json https://raw.githubusercontent.com/TruStory/testnets/master/testnet-1/genesis.json
+```
+
+Verify the checksum:
+```
+$ sha256sum .truchaind/config/genesis.json
+c1034a2e41a8028ccbcd476f5ca617ba5a069960e671c69a2ae47f9ad086bb99  genesis.json
+```
+
+Before the genesis start time, start your chain:
+```
+$ truchaind start --p2p.persistent_peers "c86fe442b5febdd2539d322af83d9c55f57d57fd@13.52.13.214:26656"
+```
+Better yet, start it [as a service](https://github.com/TruStory/testnets/blob/master/linux.md#make-a-system-service-optional).
+
+If all goes well, all validators will start producing blocks at the genesis start time.
+
 ## Overview
 
 TruStory testnets will test the functionality of the [TruStory blockchain](https://github.com/TruStory/truchain) prior to the launch of mainnet. Validators who plan on joining the mainnet launch are strongly encouraged to participate in testnets.
