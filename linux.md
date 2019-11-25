@@ -42,7 +42,7 @@ After=network-online.target
 [Service]
 User=ubuntu
 WorkingDirectory=/home/ubuntu/bin
-ExecStart=/home/ubuntu/bin/truchaind --log_level "main:info,state:info,*:error,app:info,account:info,trubank:info,claim:info,community:info,truslashing:info,trustaking:info" start
+ExecStart=/home/ubuntu/bin/truchaind --log_level "main:info,state:info,*:error,app:info,account:info,trubank:info,claim:info,community:info,truslashing:info,trustaking:info" start --p2p.persistent_peers "c86fe442b5febdd2539d322af83d9c55f57d57fd@13.52.13.214:26656"
 Restart=always
 RestartSec=3
 LimitNOFILE=4096
