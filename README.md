@@ -34,6 +34,18 @@ Better yet, start it [as a service](https://github.com/TruStory/testnets/blob/ma
 
 If all goes well, all validators will start producing blocks at the genesis start time.
 
+Persistent peers:
+```
+c86fe442b5febdd2539d322af83d9c55f57d57fd@13.52.13.214:26656
+42e35dc33e90acecc00f2a29fe397cb3c26e2db7@52.52.237.128:26656
+bea30dff4c4cf863794a249c31a1a9f6fb6487e3@54.183.182.160:26656
+```
+
+Seed nodes:
+```
+c96518bac16bef98757d5eef8ba8fa45b0c75272@52.52.75.14:26656
+```
+
 ## Overview
 
 TruStory testnets will test the functionality of the [TruStory blockchain](https://github.com/TruStory/truchain) prior to the launch of mainnet. Validators who plan on joining the mainnet launch are strongly encouraged to participate in testnets.
