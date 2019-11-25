@@ -23,7 +23,7 @@ $ wget -O .truchaind/config/genesis.json https://raw.githubusercontent.com/TruSt
 Verify the checksum:
 ```
 $ sha256sum .truchaind/config/genesis.json
-c1034a2e41a8028ccbcd476f5ca617ba5a069960e671c69a2ae47f9ad086bb99 genesis.json
+9eba7d370b91771dce1b036634a8e5086765b75f797169fecab2e75d95459756 genesis.json
 ```
 
 Before the genesis start time, start your chain:
