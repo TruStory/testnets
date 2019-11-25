@@ -41,8 +41,8 @@ After=network-online.target
 
 [Service]
 User=ubuntu
-WorkingDirectory=/home/ubuntu/go/bin
-ExecStart=/home/ubuntu/go/bin/truchaind --log_level "main:info,state:info,*:error,app:info,account:info,trubank:info,claim:info,community:info,truslashing:info,trustaking:info" start
+WorkingDirectory=/home/ubuntu/bin
+ExecStart=/home/ubuntu/bin/truchaind --log_level "main:info,state:info,*:error,app:info,account:info,trubank:info,claim:info,community:info,truslashing:info,trustaking:info" start
 Restart=always
 RestartSec=3
 LimitNOFILE=4096
