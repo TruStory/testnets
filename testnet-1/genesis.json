@@ -56,7 +56,7 @@
         "min_deposit": [
           {
             "denom": "utru",
-            "amount": "10000000"
+            "amount": "1000000"
           }
         ],
         "max_deposit_period": "172800000000000"
@@ -87,9 +87,9 @@
     },
     "trudistribution": {
       "params": {
-        "user_growth_allocation": "0.250000000000000000",
-        "user_reward_allocation": "0.250000000000000000",
-        "stakeholder_allocation": "0.250000000000000000"
+        "user_growth_allocation": "0.500000000000000000",
+        "user_reward_allocation": "0.500000000000000000",
+        "stakeholder_allocation": "0.000000000000000000"
       }
     },
     "crisis": {
@@ -110,6 +110,12 @@
           "id": "meme",
           "name": "Memes",
           "description": "description string",
+          "created_time": "2019-11-24T03:01:48.325713089Z"
+        },
+        {
+          "id": "testnet",
+          "name": "Testnet",
+          "description": "Discuss testnet-1",
           "created_time": "2019-11-24T03:01:48.325713089Z"
         }
       ],
@@ -644,7 +650,7 @@
       "fee_pool": {
         "community_pool": []
       },
-      "community_tax": "0.020000000000000000",
+      "community_tax": "0.500000000000000000",
       "base_proposer_reward": "0.010000000000000000",
       "bonus_proposer_reward": "0.040000000000000000",
       "withdraw_addr_enabled": true,
@@ -662,9 +668,7 @@
       "params": {
         "registrar": "tru1tfpcnjzkthft3ynewqvn7mtdk7guf3kn57n000",
         "max_slash_count": "3",
-        "jail_duration": "604800000000000",
-        "user_growth_allocation": "0.200000000000000000",
-        "stakeholder_allocation": "0.200000000000000000"
+        "jail_duration": "604800000000000"
       }
     },
     "auth": {
@@ -882,14 +886,14 @@
     },
     "mint": {
       "minter": {
-        "inflation": "0.130000000000000000",
+        "inflation": "0.700000000000000000",
         "annual_provisions": "0.000000000000000000"
       },
       "params": {
         "mint_denom": "utru",
         "inflation_rate_change": "0.130000000000000000",
-        "inflation_max": "0.200000000000000000",
-        "inflation_min": "0.070000000000000000",
+        "inflation_max": "0.700000000000000000",
+        "inflation_min": "0.700000000000000000",
         "goal_bonded": "0.670000000000000000",
         "blocks_per_year": "6311520"
       }
