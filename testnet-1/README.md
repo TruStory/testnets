@@ -43,3 +43,13 @@ Seed nodes:
 ```
 c96518bac16bef98757d5eef8ba8fa45b0c75272@52.52.75.14:26656
 ```
+
+## Post-launch
+
+Blocks started immediately because validator blockshane had incorrectly self-delegated 10x more tokens, giving them an outsized voting power. They unbonded the extra tokens and blocks continued to be produced.
+
+10/12 validators were online at genesis time.
+
+## Post-mortem
+
+TBD
