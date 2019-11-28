@@ -6,6 +6,7 @@
 
 **Genesis start time:             Nov 26th 9am PST (1700 GMT)**
 
+Block explorer: [Big Dipper](https://explorer.testnet.trustory.io)
 
 Please update your binaries to the latest release [v0.4.2-beta](https://github.com/TruStory/truchain/releases/tag/v0.4.2-beta):
 ```
